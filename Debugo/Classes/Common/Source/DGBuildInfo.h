@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL gitEnable;
 /// 当前 git 分支
 @property (nonatomic, copy) NSString *gitBranch;
+/// 最后一次提交的message
+@property (nonatomic, copy) NSString *gitLastCommitMessage;
 /// 最后一次提交的缩写 hash
 @property (nonatomic, copy) NSString *gitLastCommitAbbreviatedHash;
 /// 最后一次提交的用户

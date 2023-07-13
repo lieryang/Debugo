@@ -24,6 +24,8 @@ if command -v git >/dev/null 2>&1 ; then
 
     gitBranch="$(git symbolic-ref --short -q HEAD)"
     echo "git branch: ${gitBranch}"
+    gitLastCommitMessage="$(git log -1 --format="%s")"
+    echo "git last commit message: ${gitLastCommitMessage}"
     gitLastCommitAbbreviatedHash="$(git log -1 --format="%h")"
     echo "git last commit abbreviated hash: ${gitLastCommitSha}"
     gitLastCommitUser="$(git log -1 --format="%an")"
@@ -73,6 +75,7 @@ fi
 /usr/libexec/PlistBuddy -c "Add :GitEnable bool ${gitEnable}" ${buildInfoPlist}
 if [ "${gitEnable}"=true ]; then
   /usr/libexec/PlistBuddy -c "Add :GitBranch string ${gitBranch}" ${buildInfoPlist}
+  /usr/libexec/PlistBuddy -c "Add :GitLastCommitMessage string ${gitLastCommitMessage}" ${buildInfoPlist}
   /usr/libexec/PlistBuddy -c "Add :GitLastCommitAbbreviatedHash string ${gitLastCommitAbbreviatedHash}" ${buildInfoPlist}
   /usr/libexec/PlistBuddy -c "Add :GitLastCommitUser string ${gitLastCommitUser}" ${buildInfoPlist}
   /usr/libexec/PlistBuddy -c "Add :GitLastCommitTimestamp string ${gitLastCommitTimestamp}" ${buildInfoPlist}

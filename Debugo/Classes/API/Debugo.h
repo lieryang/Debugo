@@ -19,8 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 框架版本
 + (NSString *)version;
 
-/// 框架是否可以启用，目前默认为仅在 DEBUG 模式可以启用
-+ (BOOL)canBeEnabled;
+/// 框架是否可以启用，开放给业务控制
+@property (nonatomic, assign, class) BOOL enabled;
 
 /// ☄️ 启动框架 可在 configuration block 中配置参数
 + (void)fireWithConfiguration:(nullable void (^)(DGConfiguration *configuration))block;

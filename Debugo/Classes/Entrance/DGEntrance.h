@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 显示悬浮球
 - (void)showBubble;
 
+/// 隐藏悬浮球
+- (void)hiddenBubble;
+
 /// 关闭 debug window
 - (void)closeDebugWindow;
 
