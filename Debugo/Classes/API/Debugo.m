@@ -58,6 +58,15 @@ static BOOL _enabled = NO;
     return _enabled;
 }
 
+static NSComparisonResult (^_sortUserComparator)(id obj1, id obj2);
++ (void)setSortUserComparator:(NSComparisonResult (^)(id _Nonnull, id _Nonnull))sortUserComparator {
+    _sortUserComparator = sortUserComparator;
+}
+
++ (NSComparisonResult (^)(id _Nonnull, id _Nonnull))sortUserComparator {
+    return _sortUserComparator;
+}
+
 #pragma mark -
 + (void)fireWithConfiguration:(void (^)(DGConfiguration *configuration))block {
     dg_exec_main_queue_only_can_be_enabled(^{
