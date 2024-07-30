@@ -1072,19 +1072,19 @@
 			baseConfigurationReference = 21A7873E68EE08CCC24AE20E /* Pods-Debugo-Example-ObjectiveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4JPU9286A5;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J93ZK943WH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Debugo-Example-ObjectiveC/PrefixHeader.pch";
 				INFOPLIST_FILE = "Debugo-Example-ObjectiveC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.picooc.demo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ripperhe.debugoexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Demo1DevelopProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1094,19 +1094,19 @@
 			baseConfigurationReference = 5DD8D0743E71B41E6A893F66 /* Pods-Debugo-Example-ObjectiveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 4JPU9286A5;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J93ZK943WH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Debugo-Example-ObjectiveC/PrefixHeader.pch";
 				INFOPLIST_FILE = "Debugo-Example-ObjectiveC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.picooc.demo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ripperhe.debugoexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Demo1DistributionProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
