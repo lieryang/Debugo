@@ -94,6 +94,7 @@ static DGEntrance *_instance;
 /// 隐藏悬浮球
 - (void)hiddenBubble {
     [self.bubble removeFromScreen];
+    [self.link invalidate];
 }
 
 - (void)tick:(CADisplayLink *)link {
