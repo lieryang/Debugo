@@ -88,7 +88,7 @@
                 }];
                 [segmentedControl sizeToFit];
                 segmentedControl.dg_centerY = 25;
-                [cell addSubview:segmentedControl];
+                [cell.contentView addSubview:segmentedControl];
                 cell.dg_extWeakObj = segmentedControl;
                 return cell;
             }];
@@ -119,7 +119,7 @@
                 }];
                 [segmentedControl sizeToFit];
                 segmentedControl.dg_centerY = 25;
-                [cell addSubview:segmentedControl];
+                [cell.contentView addSubview:segmentedControl];
                 cell.dg_extWeakObj = segmentedControl;
                 return cell;
             }];

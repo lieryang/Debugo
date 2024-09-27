@@ -1077,12 +1077,12 @@
 				DEVELOPMENT_TEAM = AUZEEPV5UE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Debugo-Example-ObjectiveC/PrefixHeader.pch";
 				INFOPLIST_FILE = "Debugo-Example-ObjectiveC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.picooc.demo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ripperhe.debugoexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1099,12 +1099,12 @@
 				DEVELOPMENT_TEAM = AUZEEPV5UE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Debugo-Example-ObjectiveC/PrefixHeader.pch";
 				INFOPLIST_FILE = "Debugo-Example-ObjectiveC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.picooc.demo1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ripperhe.debugoexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
