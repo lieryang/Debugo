@@ -8,6 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DGDebugWindow.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) void(^bubbleLongPressBlock)(void);
 
 + (instancetype)shared;
+
+@property (nonatomic, strong, readonly) DGDebugWindow *debugWindow;
 
 /// 显示悬浮球
 - (void)showBubble;
