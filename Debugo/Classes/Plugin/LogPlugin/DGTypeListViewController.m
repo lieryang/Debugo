@@ -64,6 +64,16 @@
 }
 
 - (void)receiveDebugoLogWindowNoti:(NSNotification *)noti {
+    if ([NSThread isMainThread]) {
+        [self reloadDataInMainThreadWithNoti:noti];
+    } else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self reloadDataInMainThreadWithNoti:noti];
+        });
+    }
+}
+
+- (void)reloadDataInMainThreadWithNoti:(NSNotification *)noti {
     NSDictionary *userInfo = noti.userInfo;
     DGLogTypeModel *typeModel = userInfo[@"typeModel"];
     [self.dataArray addObject:typeModel];
